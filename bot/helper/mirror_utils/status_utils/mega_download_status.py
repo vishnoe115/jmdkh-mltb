@@ -7,7 +7,7 @@ class MegaDownloadStatus:
         self.__uid = listener.uid
         self.message = listener.message
         self.__engine = "megasdkrestclient"
-        self.__mode = self.__listener.mode
+        self.__mode = listener.mode
 
     def gid(self):
         return self.__obj.gid
