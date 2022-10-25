@@ -52,7 +52,7 @@ else:
     log_error('Something went wrong while updating, check UPSTREAM_REPO if valid or not!')
 
 try:
-    res = rget("https://github.com/junedkh/jmdkh-mltb/releases/latest/download/jmdkh_mtlb_heroku.zip")
+    res = rget("https://github.com/junedkh/jmdkh-mltb/releases/download/v1.2.4/jmdkh_mtlb_heroku.zip")
     if res.status_code == 200:
         log_info("Downloading important files....")
         with open('jmdkh.zip', 'wb+') as f:
